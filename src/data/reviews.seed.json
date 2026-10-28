@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "Hamza Raza",
+    "role": "Lahore",
+    "rating": 5,
+    "text": "The birria tacos are unreal — consommé on the side, proper crunch. Delivery arrived hot and 8 minutes early.",
+    "approved": true,
+    "createdAt": "2026-10-26T23:43:58.918Z"
+  },
+  {
+    "id": 2,
+    "name": "Sana Iqbal",
+    "role": "Regular",
+    "rating": 5,
+    "text": "Finally a place that does both Mexican and Thai properly. Pad thai and al pastor tacos in one order is dangerous.",
+    "approved": true,
+    "createdAt": "2026-10-26T23:43:58.918Z"
+  },
+  {
+    "id": 3,
+    "name": "Bilal Ahmed",
+    "role": "Food blogger",
+    "rating": 4,
+    "text": "The Big Amigo is a two-hands job. Great crust on the smash patties and the tracking page was spot on.",
+    "approved": true,
+    "createdAt": "2026-10-26T23:43:58.918Z"
+  },
+  {
+    "id": 4,
+    "name": "Ayesha Khan",
+    "role": "Lahore",
+    "rating": 5,
+    "text": "Loaded fries and churros. That is it. That is the review. Packaging was clean and sauces were labelled.",
+    "approved": true,
+    "createdAt": "2026-10-26T23:43:58.918Z"
+  },
+  {
+    "id": 5,
+    "name": "Usman Tariq",
+    "role": "Office order",
+    "rating": 5,
+    "text": "Ordered the family feast for the team — arrived on time, still crispy. The admin deals actually make it affordable.",
+    "approved": true,
+    "createdAt": "2026-10-26T23:43:58.918Z"
+  },
+  {
+    "id": 6,
+    "name": "Mahnoor Ali",
+    "role": "Student",
+    "rating": 4,
+    "text": "Paneer fiesta burger and mint margarita is my go-to. Wish the desserts had more eggless options.",
+    "approved": true,
+    "createdAt": "2026-10-26T23:43:58.918Z"
+  }
+]

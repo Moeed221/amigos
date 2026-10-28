@@ -1,0 +1,58 @@
+[
+  {
+    "slug": "burgers",
+    "name": "Burgers",
+    "tagline": "Flame-grilled & stacked heavy",
+    "image": "/assets/cat-burgers.jpg",
+    "order": 1
+  },
+  {
+    "slug": "sandwiches",
+    "name": "Sandwiches",
+    "tagline": "Toasted, loaded, handheld",
+    "image": "/assets/cat-sandwiches.jpg",
+    "order": 2
+  },
+  {
+    "slug": "mexican",
+    "name": "Mexican",
+    "tagline": "Tacos, burritos & birria",
+    "image": "/assets/cat-mexican.jpg",
+    "order": 3
+  },
+  {
+    "slug": "thai",
+    "name": "Thai Kitchen",
+    "tagline": "Wok-fired noodles & curries",
+    "image": "/assets/cat-thai.jpg",
+    "order": 4
+  },
+  {
+    "slug": "fastfood",
+    "name": "Fried & Fast",
+    "tagline": "Crispy chicken & classics",
+    "image": "/assets/cat-fastfood.jpg",
+    "order": 5
+  },
+  {
+    "slug": "sides",
+    "name": "Sides",
+    "tagline": "Fries, dips & extras",
+    "image": "/assets/cat-sides.jpg",
+    "order": 6
+  },
+  {
+    "slug": "drinks",
+    "name": "Drinks",
+    "tagline": "Shakes, sodas & aguas frescas",
+    "image": "/assets/cat-drinks.jpg",
+    "order": 7
+  },
+  {
+    "slug": "desserts",
+    "name": "Desserts",
+    "tagline": "Sweet endings",
+    "image": "/assets/cat-desserts.jpg",
+    "order": 8
+  }
+]

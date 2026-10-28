@@ -1,0 +1,25 @@
+{
+  "name": "amigos-mexican-grill",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Amigos Mexican Grill — Next.js static demo",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "serve out -l 3000",
+    "lint": "eslint src"
+  },
+  "engines": {
+    "node": ">=20.9"
+  },
+  "dependencies": {
+    "next": "16.4.3",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "serve": "^14.2.4",
+    "eslint": "^9.0.0",
+    "eslint-config-next": "16.4.3"
+  }
+}

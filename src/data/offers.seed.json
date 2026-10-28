@@ -1,0 +1,54 @@
+[
+  {
+    "id": 1,
+    "title": "Welcome to the Amigos table",
+    "subtitle": "Flat 20% off your first online order.",
+    "percent": 20,
+    "scope": "all",
+    "category": null,
+    "code": "AMIGO20",
+    "badge": "20%",
+    "accent": "red",
+    "active": true,
+    "createdAt": "2026-10-26T23:43:58.918Z"
+  },
+  {
+    "id": 2,
+    "title": "Taco Tuesday, every day",
+    "subtitle": "Chef’s pick on the whole Mexican menu.",
+    "percent": 25,
+    "scope": "category",
+    "category": "mexican",
+    "code": "TACOS25",
+    "badge": "25%",
+    "accent": "gold",
+    "active": true,
+    "createdAt": "2026-10-26T23:43:58.918Z"
+  },
+  {
+    "id": 3,
+    "title": "Burgers, stacked savings",
+    "subtitle": "Smash patties and big appetites welcome.",
+    "percent": 15,
+    "scope": "category",
+    "category": "burgers",
+    "code": "BURGER15",
+    "badge": "15%",
+    "accent": "green",
+    "active": true,
+    "createdAt": "2026-10-26T23:43:58.918Z"
+  },
+  {
+    "id": 4,
+    "title": "Thai night special",
+    "subtitle": "Wok-fired curries and noodles at a softer price.",
+    "percent": 30,
+    "scope": "category",
+    "category": "thai",
+    "code": "THAI30",
+    "badge": "30%",
+    "accent": "red",
+    "active": false,
+    "createdAt": "2026-10-26T23:43:58.918Z"
+  }
+]

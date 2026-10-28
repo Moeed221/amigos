@@ -1,0 +1,1571 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "category": "burgers",
+      "name": "Amigo's Signature Double",
+      "description": "Two smashed beef patties, cheddar, pickled onion and house Amigo sauce.",
+      "price": 1450,
+      "image": "/assets/cat-burgers.jpg",
+      "tags": [
+        "popular"
+      ],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 2,
+      "category": "burgers",
+      "name": "El Diablo Jalapeño Burger",
+      "description": "Beef patty, jalapeños, pepper jack, chipotle mayo and crunchy slaw.",
+      "price": 1250,
+      "image": "/assets/variants/cat-burgers-2.jpg",
+      "tags": [
+        "spicy"
+      ],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 3,
+      "category": "burgers",
+      "name": "Smoky BBQ Bacon Stack",
+      "description": "Double beef, smoked bacon, BBQ glaze, crispy onions and cheddar.",
+      "price": 1350,
+      "image": "/assets/dish-burger-2.jpg",
+      "tags": [],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 4,
+      "category": "burgers",
+      "name": "Crispy Chicken Fiesta",
+      "description": "Buttermilk-fried chicken, pico de gallo, avocado and lime crema.",
+      "price": 1050,
+      "image": "/assets/variants/cat-burgers-3.jpg",
+      "tags": [],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 5,
+      "category": "burgers",
+      "name": "Green Chile Cheeseburger",
+      "description": "Roasted green chile, molten queso, grilled onion and beef patty.",
+      "price": 1150,
+      "image": "/assets/variants/cat-burgers-4.jpg",
+      "tags": [
+        "spicy"
+      ],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 6,
+      "category": "burgers",
+      "name": "Al Pastor Burger",
+      "description": "Chili-marinated pork patty, grilled pineapple, onion and cilantro.",
+      "price": 1290,
+      "image": "/assets/cat-burgers.jpg",
+      "tags": [],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 7,
+      "category": "burgers",
+      "name": "Thai Basil Chicken Burger",
+      "description": "Chicken patty glazed in sweet basil sauce with sriracha slaw.",
+      "price": 1120,
+      "image": "/assets/variants/cat-burgers-2.jpg",
+      "tags": [],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 8,
+      "category": "burgers",
+      "name": "Nacho Crunch Burger",
+      "description": "Beef patty, tortilla-crunch crust, nacho cheese and salsa fresca.",
+      "price": 1250,
+      "image": "/assets/dish-burger-2.jpg",
+      "tags": [],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 9,
+      "category": "burgers",
+      "name": "Mushroom Swiss Melt",
+      "description": "Sautéed mushrooms, Swiss cheese, garlic aioli on a toasted bun.",
+      "price": 1180,
+      "image": "/assets/variants/cat-burgers-3.jpg",
+      "tags": [],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 10,
+      "category": "burgers",
+      "name": "Spicy Chipotle Chicken",
+      "description": "Grilled chicken, chipotle cream, pepper jack and red onion.",
+      "price": 1090,
+      "image": "/assets/variants/cat-burgers-4.jpg",
+      "tags": [
+        "spicy"
+      ],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 11,
+      "category": "burgers",
+      "name": "The Big Amigo (Triple)",
+      "description": "Three beef patties, triple cheese, bacon jam and crispy jalapeños.",
+      "price": 1690,
+      "image": "/assets/cat-burgers.jpg",
+      "tags": [
+        "popular"
+      ],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 12,
+      "category": "burgers",
+      "name": "Classic Beef Cheeseburger",
+      "description": "Simple, juicy beef patty with cheddar, lettuce, tomato and pickle.",
+      "price": 950,
+      "image": "/assets/variants/cat-burgers-2.jpg",
+      "tags": [],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 13,
+      "category": "burgers",
+      "name": "Chicken Queso Burger",
+      "description": "Crispy chicken, warm queso dip, crumbled tortilla chips.",
+      "price": 1150,
+      "image": "/assets/dish-burger-2.jpg",
+      "tags": [],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 14,
+      "category": "burgers",
+      "name": "Paneer Fiesta Burger",
+      "description": "Grilled paneer tikka, mint chutney and crunchy cucumber slaw.",
+      "price": 990,
+      "image": "/assets/variants/cat-burgers-3.jpg",
+      "tags": [
+        "veg"
+      ],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 15,
+      "category": "burgers",
+      "name": "Birria Smash Burger",
+      "description": "Smash patty dunked in birria consommé with Oaxaca cheese.",
+      "price": 1390,
+      "image": "/assets/variants/cat-burgers-4.jpg",
+      "tags": [
+        "popular"
+      ],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 16,
+      "category": "burgers",
+      "name": "Sriracha Crunch Chicken",
+      "description": "Double-fried chicken, sriracha honey glaze and sesame slaw.",
+      "price": 1120,
+      "image": "/assets/cat-burgers.jpg",
+      "tags": [
+        "spicy"
+      ],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 17,
+      "category": "burgers",
+      "name": "Lamb Chorizo Burger",
+      "description": "Spiced lamb and chorizo patty with smoked paprika aioli.",
+      "price": 1450,
+      "image": "/assets/variants/cat-burgers-2.jpg",
+      "tags": [],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 18,
+      "category": "burgers",
+      "name": "Guacamole Turkey Burger",
+      "description": "Lean turkey patty, guacamole, alfalfa sprouts and tomato.",
+      "price": 1250,
+      "image": "/assets/dish-burger-2.jpg",
+      "tags": [],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 19,
+      "category": "burgers",
+      "name": "Buffalo Blue Chicken",
+      "description": "Buffalo-glazed chicken, blue cheese crumbles and celery slaw.",
+      "price": 1150,
+      "image": "/assets/variants/cat-burgers-3.jpg",
+      "tags": [
+        "spicy"
+      ],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 20,
+      "category": "burgers",
+      "name": "Breakfast Huevos Burger",
+      "description": "Beef patty, fried egg, chorizo hash and salsa verde.",
+      "price": 1090,
+      "image": "/assets/variants/cat-burgers-4.jpg",
+      "tags": [],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 21,
+      "category": "sandwiches",
+      "name": "Chicken Torta Ahogada",
+      "description": "Crispy chicken torta drowned in smoky chili broth.",
+      "price": 1050,
+      "image": "/assets/cat-sandwiches.jpg",
+      "tags": [
+        "spicy"
+      ],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 22,
+      "category": "sandwiches",
+      "name": "Grilled Chicken Club",
+      "description": "Grilled chicken, bacon, lettuce, tomato and garlic mayo.",
+      "price": 990,
+      "image": "/assets/variants/cat-sandwiches-2.jpg",
+      "tags": [],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 23,
+      "category": "sandwiches",
+      "name": "Philly Cheesesteak Torta",
+      "description": "Shaved beef, peppers, onions and melted provolone.",
+      "price": 1190,
+      "image": "/assets/variants/cat-sandwiches-3.jpg",
+      "tags": [
+        "popular"
+      ],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 24,
+      "category": "sandwiches",
+      "name": "Crispy Fish Baja Sandwich",
+      "description": "Battered fish, cabbage slaw and chipotle crema on a soft roll.",
+      "price": 1090,
+      "image": "/assets/variants/cat-sandwiches-4.jpg",
+      "tags": [],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 25,
+      "category": "sandwiches",
+      "name": "Thai Chicken Satay Sub",
+      "description": "Grilled chicken, peanut sauce, cucumber and cilantro.",
+      "price": 1120,
+      "image": "/assets/cat-sandwiches.jpg",
+      "tags": [],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 26,
+      "category": "sandwiches",
+      "name": "Spicy Tuna Melt",
+      "description": "Tuna, jalapeño, red onion and melted cheddar on sourdough.",
+      "price": 1050,
+      "image": "/assets/variants/cat-sandwiches-2.jpg",
+      "tags": [
+        "spicy"
+      ],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 27,
+      "category": "sandwiches",
+      "name": "Pulled Pork Torta",
+      "description": "Slow-cooked pork, pickled onion and tangy BBQ sauce.",
+      "price": 1150,
+      "image": "/assets/variants/cat-sandwiches-3.jpg",
+      "tags": [],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 28,
+      "category": "sandwiches",
+      "name": "Veggie Avocado Club",
+      "description": "Avocado, grilled peppers, hummus, lettuce and tomato.",
+      "price": 890,
+      "image": "/assets/variants/cat-sandwiches-4.jpg",
+      "tags": [
+        "veg"
+      ],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 29,
+      "category": "sandwiches",
+      "name": "Steak & Caramelized Onion Baguette",
+      "description": "Seared steak strips, sweet onions and horseradish cream.",
+      "price": 1290,
+      "image": "/assets/cat-sandwiches.jpg",
+      "tags": [],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 30,
+      "category": "sandwiches",
+      "name": "Chipotle Chicken Wrap",
+      "description": "Grilled chicken, chipotle mayo, rice, corn and black beans.",
+      "price": 950,
+      "image": "/assets/variants/cat-sandwiches-2.jpg",
+      "tags": [],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 31,
+      "category": "sandwiches",
+      "name": "Falafel Fiesta Wrap",
+      "description": "Crispy falafel, tahini, pickled veg and fresh herbs.",
+      "price": 890,
+      "image": "/assets/variants/cat-sandwiches-3.jpg",
+      "tags": [
+        "veg"
+      ],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 32,
+      "category": "sandwiches",
+      "name": "Egg & Chorizo Breakfast Torta",
+      "description": "Scrambled eggs, chorizo, cheese and salsa roja.",
+      "price": 850,
+      "image": "/assets/variants/cat-sandwiches-4.jpg",
+      "tags": [],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 33,
+      "category": "sandwiches",
+      "name": "Grilled Cheese Diablo",
+      "description": "Three cheeses, chili flakes and roasted jalapeño on sourdough.",
+      "price": 790,
+      "image": "/assets/cat-sandwiches.jpg",
+      "tags": [
+        "veg",
+        "spicy"
+      ],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 34,
+      "category": "sandwiches",
+      "name": "Teriyaki Chicken Sub",
+      "description": "Teriyaki-glazed chicken, pineapple and crisp cabbage.",
+      "price": 1090,
+      "image": "/assets/variants/cat-sandwiches-2.jpg",
+      "tags": [],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 35,
+      "category": "sandwiches",
+      "name": "Shrimp Po'Boy Amigo",
+      "description": "Crispy shrimp, remoulade, lettuce and tomato in a baguette.",
+      "price": 1250,
+      "image": "/assets/variants/cat-sandwiches-3.jpg",
+      "tags": [],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 36,
+      "category": "sandwiches",
+      "name": "Mexican Street Corn Sandwich",
+      "description": "Grilled corn, cotija, lime crema and chili powder.",
+      "price": 890,
+      "image": "/assets/variants/cat-sandwiches-4.jpg",
+      "tags": [
+        "veg"
+      ],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 37,
+      "category": "sandwiches",
+      "name": "Beef Barbacoa Baguette",
+      "description": "Slow-braised barbacoa beef, onion and cilantro.",
+      "price": 1290,
+      "image": "/assets/cat-sandwiches.jpg",
+      "tags": [],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 38,
+      "category": "sandwiches",
+      "name": "Tandoori Chicken Wrap",
+      "description": "Tandoori chicken, mint raita, onion and cucumber.",
+      "price": 990,
+      "image": "/assets/variants/cat-sandwiches-2.jpg",
+      "tags": [],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 39,
+      "category": "sandwiches",
+      "name": "Smoked Turkey Club",
+      "description": "Smoked turkey, Swiss, bacon and tomato on toasted multigrain.",
+      "price": 1050,
+      "image": "/assets/variants/cat-sandwiches-3.jpg",
+      "tags": [],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 40,
+      "category": "sandwiches",
+      "name": "Loaded Shawarma Baguette",
+      "description": "Chicken shawarma, garlic sauce, pickles and fries inside.",
+      "price": 990,
+      "image": "/assets/variants/cat-sandwiches-4.jpg",
+      "tags": [
+        "popular"
+      ],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 41,
+      "category": "mexican",
+      "name": "Birria Tacos (3 pcs)",
+      "description": "Slow-braised beef tacos with consommé for dipping.",
+      "price": 1190,
+      "image": "/assets/cat-mexican.jpg",
+      "tags": [
+        "popular"
+      ],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 42,
+      "category": "mexican",
+      "name": "Carne Asada Tacos",
+      "description": "Grilled steak, onion, cilantro and charred lime.",
+      "price": 1090,
+      "image": "/assets/variants/cat-mexican-2.jpg",
+      "tags": [],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 43,
+      "category": "mexican",
+      "name": "Al Pastor Tacos",
+      "description": "Marinated pork, pineapple, onion and cilantro.",
+      "price": 1050,
+      "image": "/assets/variants/cat-mexican-3.jpg",
+      "tags": [],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 44,
+      "category": "mexican",
+      "name": "Baja Fish Tacos",
+      "description": "Battered fish, cabbage slaw, pico and chipotle crema.",
+      "price": 1150,
+      "image": "/assets/variants/cat-mexican-4.jpg",
+      "tags": [],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 45,
+      "category": "mexican",
+      "name": "Chicken Tinga Tacos",
+      "description": "Chipotle-braised chicken, avocado and queso fresco.",
+      "price": 950,
+      "image": "/assets/cat-mexican.jpg",
+      "tags": [
+        "spicy"
+      ],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 46,
+      "category": "mexican",
+      "name": "Quesabirria Plate",
+      "description": "Grilled birria quesadilla served with rich consommé.",
+      "price": 1290,
+      "image": "/assets/variants/cat-mexican-2.jpg",
+      "tags": [
+        "popular"
+      ],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 47,
+      "category": "mexican",
+      "name": "Loaded Beef Burrito",
+      "description": "Rice, beans, beef, cheese, pico and crema in a flour tortilla.",
+      "price": 1150,
+      "image": "/assets/variants/cat-mexican-3.jpg",
+      "tags": [],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 48,
+      "category": "mexican",
+      "name": "Chicken Chipotle Burrito",
+      "description": "Grilled chicken, chipotle rice, corn salsa and cheese.",
+      "price": 1090,
+      "image": "/assets/variants/cat-mexican-4.jpg",
+      "tags": [],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 49,
+      "category": "mexican",
+      "name": "Veggie Bean Burrito",
+      "description": "Black beans, rice, grilled veg, guacamole and salsa.",
+      "price": 890,
+      "image": "/assets/cat-mexican.jpg",
+      "tags": [
+        "veg"
+      ],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 50,
+      "category": "mexican",
+      "name": "Wet Burrito Rojo",
+      "description": "Beef burrito smothered in red chili sauce and melted cheese.",
+      "price": 1250,
+      "image": "/assets/variants/cat-mexican-2.jpg",
+      "tags": [],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 51,
+      "category": "mexican",
+      "name": "Chicken Quesadilla",
+      "description": "Grilled chicken, blended cheese and roasted peppers.",
+      "price": 950,
+      "image": "/assets/variants/cat-mexican-3.jpg",
+      "tags": [],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 52,
+      "category": "mexican",
+      "name": "Cheese Quesadilla",
+      "description": "Three-cheese blend on a toasted flour tortilla.",
+      "price": 790,
+      "image": "/assets/variants/cat-mexican-4.jpg",
+      "tags": [
+        "veg"
+      ],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 53,
+      "category": "mexican",
+      "name": "Birria Quesadilla",
+      "description": "Birria beef, Oaxaca cheese and onion in a crisp tortilla.",
+      "price": 1190,
+      "image": "/assets/cat-mexican.jpg",
+      "tags": [],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 54,
+      "category": "mexican",
+      "name": "Nachos Supreme",
+      "description": "Tortilla chips, queso, beans, guacamole, crema and pico.",
+      "price": 1090,
+      "image": "/assets/variants/cat-mexican-2.jpg",
+      "tags": [
+        "veg"
+      ],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 55,
+      "category": "mexican",
+      "name": "Loaded Fries Mexican Style",
+      "description": "Fries topped with queso, beef, pico and jalapeños.",
+      "price": 890,
+      "image": "/assets/variants/cat-mexican-3.jpg",
+      "tags": [],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 56,
+      "category": "mexican",
+      "name": "Chicken Enchiladas Verdes",
+      "description": "Rolled tortillas with chicken, green sauce and crema.",
+      "price": 1150,
+      "image": "/assets/variants/cat-mexican-4.jpg",
+      "tags": [],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 57,
+      "category": "mexican",
+      "name": "Beef Chimichanga",
+      "description": "Crisp-fried beef burrito with queso and salsa.",
+      "price": 1190,
+      "image": "/assets/cat-mexican.jpg",
+      "tags": [],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 58,
+      "category": "mexican",
+      "name": "Tacos de Carnitas",
+      "description": "Slow-cooked pork tacos with onion, cilantro and salsa.",
+      "price": 1050,
+      "image": "/assets/variants/cat-mexican-2.jpg",
+      "tags": [],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 59,
+      "category": "mexican",
+      "name": "Pozole Rojo Bowl",
+      "description": "Hominy and pork stew with chili broth and fresh toppings.",
+      "price": 990,
+      "image": "/assets/variants/cat-mexican-3.jpg",
+      "tags": [],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 60,
+      "category": "mexican",
+      "name": "Chicken Flautas",
+      "description": "Crispy rolled chicken tacos with crema and salsa verde.",
+      "price": 950,
+      "image": "/assets/variants/cat-mexican-4.jpg",
+      "tags": [],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 61,
+      "category": "mexican",
+      "name": "Street Corn Esquites",
+      "description": "Charred corn with lime, cotija and chili.",
+      "price": 450,
+      "image": "/assets/cat-mexican.jpg",
+      "tags": [
+        "veg"
+      ],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 62,
+      "category": "mexican",
+      "name": "Molletes con Pico",
+      "description": "Toasted bolillo, refried beans, cheese and pico de gallo.",
+      "price": 690,
+      "image": "/assets/variants/cat-mexican-2.jpg",
+      "tags": [
+        "veg"
+      ],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 63,
+      "category": "thai",
+      "name": "Pad Thai Chicken",
+      "description": "Rice noodles, tamarind, peanuts, egg and lime.",
+      "price": 1150,
+      "image": "/assets/cat-thai.jpg",
+      "tags": [
+        "popular"
+      ],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 64,
+      "category": "thai",
+      "name": "Pad Thai Shrimp",
+      "description": "Classic pad thai with tiger prawns and crushed peanuts.",
+      "price": 1290,
+      "image": "/assets/variants/cat-thai-2.jpg",
+      "tags": [],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 65,
+      "category": "thai",
+      "name": "Green Curry Chicken",
+      "description": "Coconut green curry with bamboo shoots and Thai basil.",
+      "price": 1190,
+      "image": "/assets/variants/cat-thai-3.jpg",
+      "tags": [
+        "spicy"
+      ],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 66,
+      "category": "thai",
+      "name": "Red Curry Beef",
+      "description": "Rich red coconut curry with tender beef and peppers.",
+      "price": 1250,
+      "image": "/assets/variants/cat-thai-4.jpg",
+      "tags": [
+        "spicy"
+      ],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 67,
+      "category": "thai",
+      "name": "Massaman Curry Lamb",
+      "description": "Slow-braised lamb, potatoes, peanuts and warm spices.",
+      "price": 1390,
+      "image": "/assets/cat-thai.jpg",
+      "tags": [],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 68,
+      "category": "thai",
+      "name": "Pad See Ew",
+      "description": "Wide noodles, sweet soy, egg and Chinese broccoli.",
+      "price": 1090,
+      "image": "/assets/variants/cat-thai-2.jpg",
+      "tags": [],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 69,
+      "category": "thai",
+      "name": "Drunken Noodles (Pad Kee Mao)",
+      "description": "Wide noodles, chili, holy basil and vegetables.",
+      "price": 1120,
+      "image": "/assets/variants/cat-thai-3.jpg",
+      "tags": [
+        "spicy"
+      ],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 70,
+      "category": "thai",
+      "name": "Thai Basil Chicken Rice",
+      "description": "Wok-fried chicken with basil and chili over jasmine rice.",
+      "price": 1050,
+      "image": "/assets/variants/cat-thai-4.jpg",
+      "tags": [
+        "spicy"
+      ],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 71,
+      "category": "thai",
+      "name": "Khao Soi Chicken",
+      "description": "Northern Thai curry noodle soup with crispy noodles.",
+      "price": 1190,
+      "image": "/assets/cat-thai.jpg",
+      "tags": [],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 72,
+      "category": "thai",
+      "name": "Tom Yum Soup",
+      "description": "Hot and sour lemongrass broth with shrimp.",
+      "price": 890,
+      "image": "/assets/variants/cat-thai-2.jpg",
+      "tags": [
+        "spicy"
+      ],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 73,
+      "category": "thai",
+      "name": "Tom Kha Gai Soup",
+      "description": "Coconut chicken soup with galangal and lime leaf.",
+      "price": 950,
+      "image": "/assets/variants/cat-thai-3.jpg",
+      "tags": [],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 74,
+      "category": "thai",
+      "name": "Thai Fried Rice with Egg",
+      "description": "Jasmine rice wok-fried with egg and spring onion.",
+      "price": 990,
+      "image": "/assets/variants/cat-thai-4.jpg",
+      "tags": [],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 75,
+      "category": "thai",
+      "name": "Pineapple Fried Rice",
+      "description": "Rice with pineapple, cashews, egg and curry powder.",
+      "price": 1090,
+      "image": "/assets/cat-thai.jpg",
+      "tags": [],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 76,
+      "category": "thai",
+      "name": "Chicken Satay Skewers",
+      "description": "Grilled chicken skewers with peanut sauce.",
+      "price": 790,
+      "image": "/assets/variants/cat-thai-2.jpg",
+      "tags": [],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 77,
+      "category": "thai",
+      "name": "Thai Papaya Salad (Som Tam)",
+      "description": "Shredded papaya, lime, chili and roasted peanuts.",
+      "price": 690,
+      "image": "/assets/variants/cat-thai-3.jpg",
+      "tags": [
+        "veg",
+        "spicy"
+      ],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 78,
+      "category": "thai",
+      "name": "Mango Sticky Rice",
+      "description": "Sticky rice, coconut cream and ripe mango.",
+      "price": 650,
+      "image": "/assets/variants/cat-thai-4.jpg",
+      "tags": [
+        "veg"
+      ],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 79,
+      "category": "fastfood",
+      "name": "Crispy Chicken Bucket (8 pcs)",
+      "description": "Eight pieces of our signature crunchy fried chicken.",
+      "price": 1890,
+      "image": "/assets/cat-fastfood.jpg",
+      "tags": [
+        "popular"
+      ],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 80,
+      "category": "fastfood",
+      "name": "3-pc Fried Chicken Combo",
+      "description": "Chicken, fries, coleslaw and a drink.",
+      "price": 890,
+      "image": "/assets/variants/cat-fastfood-2.jpg",
+      "tags": [],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 81,
+      "category": "fastfood",
+      "name": "Chicken Strips (5 pcs)",
+      "description": "Crispy tenders with a choice of two dips.",
+      "price": 750,
+      "image": "/assets/variants/cat-fastfood-3.jpg",
+      "tags": [],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 82,
+      "category": "fastfood",
+      "name": "Spicy Wings (8 pcs)",
+      "description": "Heat-glazed wings with cooling ranch dip.",
+      "price": 990,
+      "image": "/assets/variants/cat-fastfood-4.jpg",
+      "tags": [
+        "spicy"
+      ],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 83,
+      "category": "fastfood",
+      "name": "BBQ Wings (8 pcs)",
+      "description": "Sticky BBQ wings with fries on the side.",
+      "price": 990,
+      "image": "/assets/cat-fastfood.jpg",
+      "tags": [],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 84,
+      "category": "fastfood",
+      "name": "Chicken Nuggets (10 pcs)",
+      "description": "Golden nuggets with ketchup and dip.",
+      "price": 590,
+      "image": "/assets/variants/cat-fastfood-2.jpg",
+      "tags": [],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 85,
+      "category": "fastfood",
+      "name": "Chicken Popcorn Box",
+      "description": "Bite-size crispy chicken with seasoned fries.",
+      "price": 490,
+      "image": "/assets/variants/cat-fastfood-3.jpg",
+      "tags": [],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 86,
+      "category": "fastfood",
+      "name": "Zinger Burger Combo",
+      "description": "Spicy chicken fillet burger, fries and drink.",
+      "price": 1090,
+      "image": "/assets/variants/cat-fastfood-4.jpg",
+      "tags": [
+        "spicy"
+      ],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 87,
+      "category": "fastfood",
+      "name": "Family Feast Platter",
+      "description": "Fried chicken, wings, nuggets, fries and 4 dips.",
+      "price": 3490,
+      "image": "/assets/cat-fastfood.jpg",
+      "tags": [
+        "popular"
+      ],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 88,
+      "category": "fastfood",
+      "name": "Mozzarella Sticks (6)",
+      "description": "Stretchy mozzarella in a crunchy crumb.",
+      "price": 590,
+      "image": "/assets/variants/cat-fastfood-2.jpg",
+      "tags": [
+        "veg"
+      ],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 89,
+      "category": "fastfood",
+      "name": "Chicken Shawarma Roll",
+      "description": "Shawarma chicken, garlic sauce, pickles and fries.",
+      "price": 450,
+      "image": "/assets/variants/cat-fastfood-3.jpg",
+      "tags": [],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 90,
+      "category": "fastfood",
+      "name": "Beef Seekh Kebab Roll",
+      "description": "Charred seekh kebab, onion, chutney and paratha.",
+      "price": 490,
+      "image": "/assets/variants/cat-fastfood-4.jpg",
+      "tags": [
+        "spicy"
+      ],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 91,
+      "category": "fastfood",
+      "name": "Onion Rings Basket",
+      "description": "Beer-battered onion rings with chipotle dip.",
+      "price": 490,
+      "image": "/assets/cat-fastfood.jpg",
+      "tags": [
+        "veg"
+      ],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 92,
+      "category": "fastfood",
+      "name": "Fish & Chips",
+      "description": "Battered white fish, chunky fries and tartar sauce.",
+      "price": 1150,
+      "image": "/assets/variants/cat-fastfood-2.jpg",
+      "tags": [],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 93,
+      "category": "sides",
+      "name": "Classic French Fries",
+      "description": "Golden fries with a pinch of sea salt.",
+      "price": 350,
+      "image": "/assets/cat-sides.jpg",
+      "tags": [
+        "veg"
+      ],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 94,
+      "category": "sides",
+      "name": "Peri Peri Fries",
+      "description": "Fries tossed in fiery peri peri seasoning.",
+      "price": 420,
+      "image": "/assets/variants/cat-sides-2.jpg",
+      "tags": [
+        "veg",
+        "spicy"
+      ],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 95,
+      "category": "sides",
+      "name": "Cheese Loaded Fries",
+      "description": "Fries drowned in warm queso and herbs.",
+      "price": 550,
+      "image": "/assets/variants/cat-sides-3.jpg",
+      "tags": [
+        "veg"
+      ],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 96,
+      "category": "sides",
+      "name": "Masala Fries",
+      "description": "Fries with chaat masala and tangy chutney.",
+      "price": 420,
+      "image": "/assets/variants/cat-sides-4.jpg",
+      "tags": [
+        "veg"
+      ],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 97,
+      "category": "sides",
+      "name": "Jalapeño Poppers (6)",
+      "description": "Cream-cheese filled poppers, crisp-fried.",
+      "price": 650,
+      "image": "/assets/cat-sides.jpg",
+      "tags": [
+        "veg",
+        "spicy"
+      ],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 98,
+      "category": "sides",
+      "name": "Garlic Bread with Cheese",
+      "description": "Toasted baguette with garlic butter and mozzarella.",
+      "price": 450,
+      "image": "/assets/variants/cat-sides-2.jpg",
+      "tags": [
+        "veg"
+      ],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 99,
+      "category": "sides",
+      "name": "Coleslaw Cup",
+      "description": "Crunchy cabbage and carrot slaw.",
+      "price": 250,
+      "image": "/assets/variants/cat-sides-3.jpg",
+      "tags": [
+        "veg"
+      ],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 100,
+      "category": "sides",
+      "name": "Mexican Rice",
+      "description": "Tomato rice with corn, beans and cilantro.",
+      "price": 350,
+      "image": "/assets/variants/cat-sides-4.jpg",
+      "tags": [
+        "veg"
+      ],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 101,
+      "category": "sides",
+      "name": "Side Salad",
+      "description": "Mixed greens, cherry tomato and lime dressing.",
+      "price": 350,
+      "image": "/assets/cat-sides.jpg",
+      "tags": [
+        "veg"
+      ],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 102,
+      "category": "sides",
+      "name": "Guacamole & Chips",
+      "description": "Fresh guacamole with warm tortilla chips.",
+      "price": 550,
+      "image": "/assets/variants/cat-sides-2.jpg",
+      "tags": [
+        "veg"
+      ],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 103,
+      "category": "sides",
+      "name": "Salsa & Chips",
+      "description": "House salsa with crisp tortilla chips.",
+      "price": 450,
+      "image": "/assets/variants/cat-sides-3.jpg",
+      "tags": [
+        "veg"
+      ],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 104,
+      "category": "sides",
+      "name": "Extra Dips Trio",
+      "description": "Ranch, chipotle and garlic aioli.",
+      "price": 300,
+      "image": "/assets/variants/cat-sides-4.jpg",
+      "tags": [
+        "veg"
+      ],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 105,
+      "category": "drinks",
+      "name": "Fresh Lime Soda",
+      "description": "Chilled soda with fresh lime and a hint of salt.",
+      "price": 320,
+      "image": "/assets/cat-drinks.jpg",
+      "tags": [
+        "veg"
+      ],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 106,
+      "category": "drinks",
+      "name": "Mint Margarita (non-alc)",
+      "description": "Mint, lemon and soda — no alcohol.",
+      "price": 350,
+      "image": "/assets/variants/cat-drinks-2.jpg",
+      "tags": [
+        "veg"
+      ],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 107,
+      "category": "drinks",
+      "name": "Mango Lassi",
+      "description": "Yogurt blended with sweet mango.",
+      "price": 420,
+      "image": "/assets/variants/cat-drinks-3.jpg",
+      "tags": [
+        "veg"
+      ],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 108,
+      "category": "drinks",
+      "name": "Horchata",
+      "description": "Creamy rice drink with cinnamon.",
+      "price": 380,
+      "image": "/assets/variants/cat-drinks-4.jpg",
+      "tags": [
+        "veg"
+      ],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 109,
+      "category": "drinks",
+      "name": "Agua de Jamaica",
+      "description": "Chilled hibiscus cooler.",
+      "price": 350,
+      "image": "/assets/cat-drinks.jpg",
+      "tags": [
+        "veg"
+      ],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 110,
+      "category": "drinks",
+      "name": "Thai Iced Tea",
+      "description": "Strong tea with sweet condensed milk.",
+      "price": 420,
+      "image": "/assets/variants/cat-drinks-2.jpg",
+      "tags": [
+        "veg"
+      ],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 111,
+      "category": "drinks",
+      "name": "Coca-Cola (Regular)",
+      "description": "330ml can, served ice cold.",
+      "price": 180,
+      "image": "/assets/variants/cat-drinks-3.jpg",
+      "tags": [],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 112,
+      "category": "drinks",
+      "name": "Sparkling Water",
+      "description": "Chilled sparkling mineral water.",
+      "price": 200,
+      "image": "/assets/variants/cat-drinks-4.jpg",
+      "tags": [],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 113,
+      "category": "drinks",
+      "name": "Fresh Orange Juice",
+      "description": "Pressed to order.",
+      "price": 380,
+      "image": "/assets/cat-drinks.jpg",
+      "tags": [
+        "veg"
+      ],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 114,
+      "category": "drinks",
+      "name": "Strawberry Shake",
+      "description": "Thick shake with real strawberries.",
+      "price": 450,
+      "image": "/assets/variants/cat-drinks-2.jpg",
+      "tags": [
+        "veg"
+      ],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 115,
+      "category": "drinks",
+      "name": "Chocolate Shake",
+      "description": "Rich chocolate shake with whipped cream.",
+      "price": 470,
+      "image": "/assets/variants/cat-drinks-3.jpg",
+      "tags": [
+        "veg"
+      ],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 116,
+      "category": "drinks",
+      "name": "Espresso",
+      "description": "Double shot, hot.",
+      "price": 300,
+      "image": "/assets/variants/cat-drinks-4.jpg",
+      "tags": [
+        "veg"
+      ],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 117,
+      "category": "desserts",
+      "name": "Churros with Chocolate (6)",
+      "description": "Cinnamon-sugar churros and warm chocolate dip.",
+      "price": 550,
+      "image": "/assets/cat-desserts.jpg",
+      "tags": [
+        "veg",
+        "popular"
+      ],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 118,
+      "category": "desserts",
+      "name": "Tres Leches Cake",
+      "description": "Sponge soaked in three milks with whipped cream.",
+      "price": 590,
+      "image": "/assets/variants/cat-desserts-2.jpg",
+      "tags": [
+        "veg"
+      ],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 119,
+      "category": "desserts",
+      "name": "Nutella Quesadilla",
+      "description": "Grilled tortilla with Nutella and banana.",
+      "price": 520,
+      "image": "/assets/variants/cat-desserts-3.jpg",
+      "tags": [
+        "veg"
+      ],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 120,
+      "category": "desserts",
+      "name": "Flan Napolitano",
+      "description": "Silky caramel custard.",
+      "price": 480,
+      "image": "/assets/variants/cat-desserts-4.jpg",
+      "tags": [
+        "veg"
+      ],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 121,
+      "category": "desserts",
+      "name": "Fried Ice Cream",
+      "description": "Crisp-coated vanilla ice cream with chocolate drizzle.",
+      "price": 550,
+      "image": "/assets/cat-desserts.jpg",
+      "tags": [
+        "veg"
+      ],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 122,
+      "category": "desserts",
+      "name": "Chocolate Lava Cake",
+      "description": "Molten chocolate centre with vanilla scoop.",
+      "price": 590,
+      "image": "/assets/variants/cat-desserts-2.jpg",
+      "tags": [
+        "veg"
+      ],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 123,
+      "category": "desserts",
+      "name": "Key Lime Pie Slice",
+      "description": "Tangy lime filling on a biscuit base.",
+      "price": 520,
+      "image": "/assets/variants/cat-desserts-3.jpg",
+      "tags": [
+        "veg"
+      ],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    },
+    {
+      "id": 124,
+      "category": "desserts",
+      "name": "Cinnamon Sugar Donuts (4)",
+      "description": "Warm mini donuts tossed in cinnamon sugar.",
+      "price": 450,
+      "image": "/assets/variants/cat-desserts-4.jpg",
+      "tags": [
+        "veg"
+      ],
+      "available": true,
+      "createdAt": "2026-10-26T23:43:58.918Z"
+    }
+  ],
+  "categories": [
+    {
+      "slug": "burgers",
+      "name": "Burgers",
+      "tagline": "Flame-grilled & stacked heavy",
+      "image": "/assets/cat-burgers.jpg",
+      "order": 1
+    },
+    {
+      "slug": "sandwiches",
+      "name": "Sandwiches",
+      "tagline": "Toasted, loaded, handheld",
+      "image": "/assets/cat-sandwiches.jpg",
+      "order": 2
+    },
+    {
+      "slug": "mexican",
+      "name": "Mexican",
+      "tagline": "Tacos, burritos & birria",
+      "image": "/assets/cat-mexican.jpg",
+      "order": 3
+    },
+    {
+      "slug": "thai",
+      "name": "Thai Kitchen",
+      "tagline": "Wok-fired noodles & curries",
+      "image": "/assets/cat-thai.jpg",
+      "order": 4
+    },
+    {
+      "slug": "fastfood",
+      "name": "Fried & Fast",
+      "tagline": "Crispy chicken & classics",
+      "image": "/assets/cat-fastfood.jpg",
+      "order": 5
+    },
+    {
+      "slug": "sides",
+      "name": "Sides",
+      "tagline": "Fries, dips & extras",
+      "image": "/assets/cat-sides.jpg",
+      "order": 6
+    },
+    {
+      "slug": "drinks",
+      "name": "Drinks",
+      "tagline": "Shakes, sodas & aguas frescas",
+      "image": "/assets/cat-drinks.jpg",
+      "order": 7
+    },
+    {
+      "slug": "desserts",
+      "name": "Desserts",
+      "tagline": "Sweet endings",
+      "image": "/assets/cat-desserts.jpg",
+      "order": 8
+    }
+  ]
+}
