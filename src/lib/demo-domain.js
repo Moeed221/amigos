@@ -10,18 +10,18 @@ const RIDERS = [
 const STAGES = ['placed', 'preparing', 'on_the_way', 'arriving', 'delivered'];
 const STAGE_LABELS = {
   placed: 'Order received',
-  preparing: 'In the kitchen',
+  preparing: 'Preparing your order',
   on_the_way: 'Rider on the way',
   arriving: 'Rider arriving',
   delivered: 'Delivered',
   cancelled: 'Cancelled',
 };
 const STAGE_COPY = {
-  placed: 'We have your order — the kitchen is firing up the grill.',
-  preparing: 'Your food is being cooked fresh right now.',
-  on_the_way: 'Your rider has picked up the order and left the kitchen.',
+  placed: 'Your order is confirmed and will be prepared shortly.',
+  preparing: 'Your items are being packed and checked.',
+  on_the_way: 'Your rider has collected your order from Amigos.',
   arriving: 'Your rider is around the corner — please be ready.',
-  delivered: 'Enjoy your meal, amigo!',
+  delivered: 'Enjoy the flavour, amigo!',
   cancelled: 'This order was cancelled.',
 };
 // simulated seconds per stage (divide by DEMO_SPEED for real seconds)

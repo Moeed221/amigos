@@ -1,3 +1,4 @@
+import {sauces,pack} from '../data/sauce-products';
 /** Local demo operations. No fetch, API server, authentication, payments or database. */
 import { store } from './demo-storage';
 import { decorate, simulateAndTrack, STAGES, RIDERS, money, orderCode } from './demo-domain';
@@ -10,7 +11,7 @@ export async function getMenu() {
   const [items, offers, categories] = await Promise.all([
     store.getItems(), store.getOffers({ activeOnly: true }), store.getCategories()
   ]);
-  return { categories, offers, items: items.map(item => decorate(item, offers)) };
+  return { categories, offers, items: [...items.map(item => decorate(item, offers)), ...sauces, pack] };
 }
 export const getReviews = () => store.getReviews({ approvedOnly: true });
 export const getAdminReviews = () => store.getReviews({ approvedOnly: false });

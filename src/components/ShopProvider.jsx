@@ -2,8 +2,8 @@
 import {createContext,useContext,useEffect,useState} from 'react';
 import {getMenu,placeOrder} from '../lib/demo-data';
 const Context=createContext(null);
-const CART='amigos_order_bag_v2',PREF='amigos_order_preferences_v2';
-export const money=n=>'Rs '+Math.round(Number(n)||0).toLocaleString('en-PK');
+const CART='amigos_sauce_cart_v1',PREF='amigos_order_preferences_v2';
+export const money=n=>'$'+(Number(n)||0).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});
 export function ShopProvider({children}){
  const [data,setData]=useState({items:[],categories:[],offers:[]}),[ready,setReady]=useState(false),[loadError,setLoadError]=useState('');
  const [cart,setCart]=useState([]),[preferences,setPreferences]=useState({type:'delivery',address:''}),[customer,setCustomer]=useState({name:'',phone:'',notes:'',payment:'cod'}),[notice,setNotice]=useState(null);
