@@ -10,7 +10,7 @@ const RIDERS = [
 const STAGES = ['placed', 'preparing', 'on_the_way', 'arriving', 'delivered'];
 const STAGE_LABELS = {
   placed: 'Order received',
-  preparing: 'Preparing your order',
+  preparing: 'In the kitchen',
   on_the_way: 'Rider on the way',
   arriving: 'Rider arriving',
   delivered: 'Delivered',
@@ -18,7 +18,7 @@ const STAGE_LABELS = {
 };
 const STAGE_COPY = {
   placed: 'Your order is confirmed and will be prepared shortly.',
-  preparing: 'Your items are being packed and checked.',
+  preparing: 'Your meal is being prepared in the Amigos kitchen.',
   on_the_way: 'Your rider has collected your order from Amigos.',
   arriving: 'Your rider is around the corner — please be ready.',
   delivered: 'Enjoy the flavour, amigo!',

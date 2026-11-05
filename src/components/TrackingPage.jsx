@@ -45,7 +45,7 @@ export default function TrackingPage(){
   const status=cancelled?'Order cancelled':pickup?(complete?'Collected':ready?'Ready for pickup':order?.statusLabel):order?.statusLabel;
   const pickupIndex=complete?3:ready?2:order?.status==='preparing'?1:0;
   const timeline=pickup?[
-    ['Order received','Your order is confirmed.'],['Preparing your order','We’re packing your items.'],['Ready for pickup','Collect from the Amigos counter.'],['Collected','Enjoy the flavour, amigo!']
+    ['Order received','Your order is confirmed.'],['In the kitchen','Your meal is being prepared.'],['Ready for pickup','Collect from the Amigos counter.'],['Collected','Enjoy the flavour, amigo!']
   ].map(([label,detail],i)=>({label,detail,done:i<pickupIndex||complete,active:i===pickupIndex&&!complete})):order?.timeline||[];
   return <><link rel="stylesheet" href="/css/tracking.css"/>
   <div className="track-page">
@@ -57,7 +57,7 @@ export default function TrackingPage(){
     {!cancelled&&!complete&&!ready&&<div className="track-eta"><div><small>{pickup?'Estimated preparation':'Estimated arrival'}</small><strong>{order.etaMinutes} <span>min</span></strong></div><span className="track-demo">Demo ×{order.demo?.speed||1}</span></div>}
     {!cancelled&&<ol className="track-timeline">{timeline.map((step,i)=><li key={step.label} className={step.done?'done':step.active?'active':''} aria-current={step.active?'step':undefined}><span aria-hidden="true">{step.done?<Icon name="check" size={17}/>:i+1}</span><div><strong>{step.label}</strong><p>{step.detail}</p></div></li>)}</ol>}
     <small className="track-updated">{complete||cancelled?'Final status':'Updates automatically'} · Updated {updated}</small></section>
-    <section className="track-card track-summary" aria-labelledby="summary-title"><h2 id="summary-title">Order details</h2><dl><div><dt>{pickup?'Pickup from':'Delivering to'}</dt><dd>{pickup?'Amigos counter':order.customer?.address||'Your saved address'}</dd></div>{order.customer?.name&&<div><dt>Customer</dt><dd>{order.customer.name}</dd></div>}</dl><ul>{order.items.map((item,i)=><li key={i}><img src={item.image} alt=""/><div><strong>{item.qty} × {item.name}</strong><span>{money(item.price*item.qty)}</span></div></li>)}</ul><div className="track-total"><span>Total</span><strong>{money(order.totals.total)}</strong></div>{order.totals.discount>0&&<p className="ord-savings">Includes {money(order.totals.discount)} in savings</p>}<a className="btn btn--ghost" href="/shop/">Back to shop</a></section></div>}
+    <section className="track-card track-summary" aria-labelledby="summary-title"><h2 id="summary-title">Order details</h2><dl><div><dt>{pickup?'Pickup from':'Delivering to'}</dt><dd>{pickup?'Amigos counter':order.customer?.address||'Your saved address'}</dd></div>{order.customer?.name&&<div><dt>Customer</dt><dd>{order.customer.name}</dd></div>}</dl><ul>{order.items.map((item,i)=><li key={i}><img src={item.image} alt=""/><div><strong>{item.qty} × {item.name}</strong><span>{money(item.price*item.qty)}</span></div></li>)}</ul><div className="track-total"><span>Total</span><strong>{money(order.totals.total)}</strong></div>{order.totals.discount>0&&<p className="ord-savings">Includes {money(order.totals.discount)} in savings</p>}<a className="btn btn--ghost" href="/shop/">Back to menu</a></section></div>}
     {!order&&!loading&&!error&&<p className="track-help">You’ll find your AMG code on the confirmation screen after checkout.</p>}
   </div></div></>;
 }
