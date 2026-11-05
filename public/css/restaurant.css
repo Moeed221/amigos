@@ -14,3 +14,208 @@ html[data-theme=light]{--ref-bg:#f5e4c7;--ref-cream:#100b06;--ref-muted:#5a4b38;
 @media(prefers-reduced-motion:reduce){.brand-intro{display:none!important}.food-orbit,.food-garnish,.restaurant-card-art img,.restaurant-reason,.meal-food img{animation:none!important;transition:none!important}.hero-food-disc{animation:none}.food-motion,.restaurant-hero h1{transform:none}.restaurant-stack{height:auto;min-height:0;padding:35px 20px}.stack-sticky{position:relative;top:0;height:auto;min-height:0;overflow:visible}.stack-cards{margin:0;width:100%;max-width:700px;display:grid;gap:20px}.restaurant-benefit{position:relative;inset:auto;transform:none!important;opacity:1!important}.floating-produce{display:none}.restaurant-why{height:auto;min-height:0}.reasons-sticky{position:relative;top:0;height:auto;min-height:0}.reasons-stage{height:auto;display:grid;gap:35px;margin-top:30px}.restaurant-reason{position:relative;left:auto;top:auto;transform:none!important;opacity:1!important;max-width:650px;width:90%;margin:auto}.reasons-controls,.reasons-decoration{display:none}.community-track{animation:none;overflow-x:auto;max-width:100vw}.community-track figure[aria-hidden=true]{display:none}}
 
 @media(max-width:500px){.food-price-stamp{top:35px;right:12px}}
+
+/* Phone and tablet layouts: natural document flow, readable cards and touch controls. */
+@media (max-width:800px){
+ html{scroll-padding-top:182px}
+ .restaurant-app{--mobile-header-height:166px;--mobile-promo-height:0px}
+ .restaurant-app.has-promo{--mobile-promo-height:34px}
+ .restaurant-app .restaurant-header,.page-scrolled .restaurant-app .restaurant-header{position:sticky;top:calc(-1 * var(--mobile-promo-height));background:var(--ref-bg);animation:none}
+ .restaurant-header .promo,.page-scrolled .restaurant-header .promo{display:flex;height:34px;font-size:10px;line-height:1.3;padding-right:44px}
+ .restaurant-header .promo>button{min-width:44px;min-height:34px}
+ .restaurant-header .header-row,.page-scrolled .restaurant-header .header-row{display:grid;grid-template-columns:1fr 48px 44px;grid-template-rows:56px 44px;gap:6px 12px;padding:8px 16px;background:var(--ref-bg)}
+ .restaurant-header-right,.restaurant-header-actions{display:contents}
+ .restaurant-header .ref-brand,.page-scrolled .restaurant-header .ref-brand{grid-column:1;grid-row:1;width:76px;flex-basis:auto}
+ .restaurant-header .ref-brand img,.page-scrolled .restaurant-header .ref-brand img{height:56px;width:76px;object-fit:contain}
+ .restaurant-header .restaurant-cart{grid-column:2;grid-row:1;width:48px;height:48px}
+ .restaurant-header .restaurant-cart .taco-cart{scale:1}
+ .restaurant-header .nav-toggle{grid-column:3;grid-row:1;width:44px;height:44px}
+ .restaurant-header .header-order-modes{grid-column:1/-1;grid-row:2;display:grid;grid-template-columns:1fr 1fr;padding:0;gap:6px;border:0}
+ .restaurant-header .header-order-modes button{min-height:44px;padding:10px 14px;font-size:13px;gap:8px;border:1px solid var(--ref-line)}
+ .restaurant-header .header-order-modes button svg{width:19px;height:19px}
+ .restaurant-order-bar{height:44px;padding:0 16px;font-size:12px}
+ .restaurant-order-bar>a{width:100%;min-height:44px}
+ .restaurant-order-bar>a>span{max-width:none;flex:1}
+ .restaurant-order-bar svg{flex-shrink:0}
+ .restaurant-hero{padding-top:22px}
+ .restaurant-hero h1{font-size:clamp(36px,8.8vw,66px);line-height:1.08;transform:none}
+ .food-stage{margin-top:20px;height:530px}
+ .food-stage .hero-meta{padding-top:12px;gap:6px;margin:0}
+ .hero-food-window{inset:65px 0 140px}
+ .food-stage .hero-controls{top:225px;left:0;right:0}
+ .food-stage .hero-controls button{width:44px;height:44px}
+ .hero-bottom{gap:8px}
+ .hero-pagination{gap:4px}
+ .hero-pagination button{width:44px;height:36px;background:transparent;display:grid;place-items:center}
+ .hero-pagination button:before{position:static;width:25px;height:5px;border-radius:3px;background:var(--ref-cream)}
+ .hero-order{min-width:0;width:min(100%,330px);min-height:50px;font-size:22px}
+ .hero-full-menu{min-height:44px;display:flex;align-items:center;font-size:13px}
+ .restaurant-story{padding:56px 16px 0}
+ .restaurant-story .statement{font-size:clamp(26px,5vw,36px);line-height:1.25}
+ .restaurant-stack{height:auto;min-height:0;margin:32px 0 0;padding:0}
+ .stack-sticky{position:static;height:auto;min-height:0;overflow:visible;padding:0}
+ .stack-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;width:100%;max-width:none;margin:0}
+ .restaurant-benefit{position:relative;inset:auto;transform:none!important;opacity:1!important;will-change:auto;box-shadow:none}
+ .restaurant-benefit h2{font-size:27px;min-height:55px;height:auto;padding:14px 10px;line-height:1.1}
+ .restaurant-benefit>div{padding:20px;min-height:260px;gap:16px}
+ .restaurant-benefit p{font-size:16px;line-height:1.5}
+ .restaurant-benefit>div>svg{width:44px;height:44px}
+ .benefit-link{min-height:44px}
+ .floating-produce,.stack-counter{display:none}
+ .restaurant-app .choose-section{padding:64px 16px 0}
+ .restaurant-grid{gap:16px}
+ .restaurant-card{padding:20px;min-height:0}
+ .restaurant-card h3{font-size:34px;min-height:2.1em}
+ .restaurant-card-art{height:210px}
+ .food-card-top{font-size:11px}
+ .restaurant-card-description{font-size:14px;line-height:1.5;min-height:0}
+ .restaurant-card-actions{transform:none;gap:6px}
+ .restaurant-card .ref-button{min-height:48px;font-size:19px;padding:12px;gap:8px;flex-wrap:wrap}
+ .food-customise{min-height:44px;font-size:12px}
+ .restaurant-meal{margin:56px 16px 0;padding:30px 20px;gap:24px}
+ .restaurant-meal .bundle-copy h2{font-size:clamp(60px,12vw,88px)}
+ .meal-choices select{font-size:16px;min-height:48px;max-width:100%}
+ .meal-selection{min-height:0;padding-bottom:12px}
+ .meal-foods{height:280px;min-height:0}
+ .meal-help{margin-top:12px!important;font-size:14px}
+ .meal-add{min-height:50px;flex-wrap:wrap}
+ .meal-view{display:inline-flex;align-items:center;min-height:44px}
+ .restaurant-menu-page{padding-top:26px}
+ .restaurant-menu-intro{padding:0 16px 28px}
+ .restaurant-menu-intro h1{font-size:clamp(54px,10vw,86px);line-height:1.02}
+ .restaurant-menu-intro>p:last-child{font-size:16px;line-height:1.5}
+ .restaurant-catalog{padding:0 16px}
+ .restaurant-menu-tabs{top:var(--mobile-header-height);gap:8px;padding:10px 0;scroll-padding-inline:4px;scrollbar-width:thin}
+ .restaurant-menu-tabs button{font-size:20px;min-height:44px;padding:10px 14px;flex-shrink:0}
+ .restaurant-menu-tools{gap:18px;padding:24px 0}
+ .restaurant-menu-tools h2{font-size:34px}
+ .restaurant-search{width:100%;min-height:48px}
+ .restaurant-app .shop-wrap{padding-top:16px;padding-bottom:48px;width:calc(100% - 32px)}
+ .restaurant-app .shop-wrap h1{font-size:clamp(30px,7vw,42px);line-height:1.1}
+ .restaurant-app .ref-info,.restaurant-app .ref-contact,.restaurant-app .ref-about{padding-top:32px}
+ .restaurant-app .track-page{padding-top:24px}
+ .restaurant-app .track-intro h1{font-size:clamp(36px,9vw,56px)}
+ .restaurant-app .track-main{margin-top:0;padding-top:0}
+ .restaurant-app .product-detail{padding:18px;gap:22px}
+ .restaurant-app .product-detail-copy>h2{font-size:32px;overflow-wrap:anywhere}
+ .restaurant-app .product-detail-photo{padding:12px;max-height:300px}
+ .restaurant-app input:not([type=checkbox]),.restaurant-app textarea,.restaurant-app select{font-size:16px;min-width:0;max-width:100%}
+ .restaurant-app .form-row{grid-template-columns:1fr}
+ .restaurant-app .cart-layout{gap:24px}
+ .restaurant-app .cart-item-top h2{overflow-wrap:anywhere}
+ .restaurant-app .shop-quantity .icon-button,.restaurant-app .remove-item,.restaurant-app .edit-item{min-width:44px;min-height:44px}
+ .restaurant-app .cart-item-controls{gap:0;flex-wrap:wrap}
+ .restaurant-app .shop-quantity{gap:2px}
+ .restaurant-app .cart-item summary{min-height:44px}
+ .restaurant-app .recommendation-strip .shop-button{min-height:44px;font-size:12px}
+ .restaurant-app .order-summary{padding:20px}
+ .restaurant-app .summary-location{min-height:44px}
+ .restaurant-app .summary-checkout{min-height:54px}
+ .restaurant-app:has(.cart-page .summary-checkout) .ref-footer{padding-bottom:calc(100px + env(safe-area-inset-bottom))}
+ .restaurant-app .checkout-form,.restaurant-app .simple-form{padding:20px}
+ .restaurant-app .ref-toast{top:auto;bottom:calc(16px + env(safe-area-inset-bottom));left:12px;right:12px;width:auto;max-width:none;height:auto;padding:10px;gap:8px;font-size:13px;align-items:center}
+ .restaurant-app:has(.cart-page .summary-checkout) .ref-toast{bottom:calc(80px + env(safe-area-inset-bottom))}
+ .restaurant-app .ref-toast a,.restaurant-app .ref-toast button{display:inline-flex;align-items:center;justify-content:center;min-height:44px;min-width:44px}
+ .restaurant-app .ref-toast p{margin:0;max-width:none;flex:1;line-height:1.4;overflow-wrap:anywhere}
+ .restaurant-app .nav-dialog .dialog-inside{padding:20px 20px calc(24px + env(safe-area-inset-bottom));min-height:100%;height:auto;overflow:auto}
+ .restaurant-app .nav-dialog .dialog-close{top:16px;right:16px;width:44px;height:44px}
+ .menu-top-row{flex-wrap:wrap;gap:12px;padding-right:48px}
+ .restaurant-app .menu-logo{width:70px;height:70px}
+ .restaurant-app .theme-switch{min-height:44px}
+ .restaurant-app .nav-dialog nav{margin:24px 0}
+ .restaurant-app .nav-dialog nav>a{font-size:clamp(31px,7vw,52px);padding:15px 0;gap:8px;min-height:56px}
+ .restaurant-app .nav-dialog nav small{width:20px;flex-shrink:0}
+ .restaurant-app .nav-dialog nav svg{width:26px;height:26px;flex-shrink:0}
+ .restaurant-app .menu-bottom{gap:8px 24px}
+ .restaurant-app .menu-bottom a{min-height:44px;display:flex;align-items:center}
+ .restaurant-why{margin-top:64px}
+ .reasons-sticky{min-height:0;padding-bottom:16px}
+ .reasons-stage{height:365px}
+ .restaurant-reason{width:calc(100vw - 48px)}
+ .reason-number{font-size:120px}
+ .restaurant-reason h3{font-size:30px;margin:12px 0 16px;padding:14px}
+ .restaurant-reason p{font-size:16px;line-height:1.5;padding:0 12px}
+ .reasons-decoration{display:none}
+ .restaurant-community{padding-top:64px}
+ .restaurant-app .ref-footer{margin-top:48px;padding-top:40px}
+ .footer-main{gap:28px}
+ .footer-main nav a{min-height:44px;font-size:25px}
+ .restaurant-app .ref-footer-bottom>div{flex-wrap:wrap;gap:8px 20px}
+ .ref-footer-bottom a,.footer-theme{min-height:44px;display:inline-flex;align-items:center}
+}
+@media (max-width:500px){
+ .restaurant-hero h1{font-size:10.4vw}
+ .food-stage{height:calc(65vw + 210px);margin-top:18px}
+ .food-stage .hero-meta{padding-top:12px;flex-direction:column;align-items:center}
+ .food-stage .hero-meta strong{font-size:23px}
+ .hero-food-window{inset:68px 0 154px}
+ .hero-food-main{width:68vw;height:58vw;max-width:none;max-height:none;top:10px}
+ .hero-food-disc{width:66vw;max-width:none;top:4px}
+ .food-garnish{width:80px;height:100px}
+ .garnish-one{left:0;top:45px}.garnish-two{right:0;top:120px}
+ .food-price-stamp{top:8px;right:8px;width:65px;height:65px;font-size:20px}
+ .food-stage .hero-controls{top:calc(35vw + 48px)}
+ .stack-cards{grid-template-columns:1fr;gap:16px}
+ .restaurant-benefit>div{min-height:0;padding:20px;gap:14px}
+ .restaurant-benefit h2{font-size:29px}
+ .restaurant-grid{grid-template-columns:1fr;gap:16px}
+ .restaurant-card{display:grid;grid-template-columns:minmax(0,1fr) 110px;grid-template-areas:'meta meta' 'title image' 'description description' 'actions actions';gap:12px;padding:18px;min-height:0}
+ .food-card-top{grid-area:meta;font-size:11px;gap:10px}
+ .restaurant-card h3{grid-area:title;align-self:center;font-size:32px;line-height:1.03;min-height:0;margin:0;overflow-wrap:anywhere}
+ .restaurant-card-art{grid-area:image;height:120px;margin:0}
+ .restaurant-card-art img{max-height:100%;width:100%;object-fit:cover}
+ .restaurant-card-description{grid-area:description;font-size:14px;margin:0!important;min-height:0}
+ .restaurant-card-actions{grid-area:actions;margin:0}
+ .restaurant-card .ref-button{font-size:21px;min-height:48px}
+ .food-customise{font-size:12px;min-height:44px}
+ .restaurant-app .product-action{flex-direction:column;align-items:stretch;gap:16px}
+ .restaurant-app .product-action .shop-quantity{justify-content:center}
+ .restaurant-app .product-action>.shop-button{font-size:18px;min-height:52px;padding:14px}
+ .restaurant-app .cart-item{display:grid;grid-template-columns:68px minmax(0,1fr);padding:12px;gap:12px}
+ .restaurant-app .cart-item-image{width:68px;min-height:68px;border-radius:8px;overflow:hidden}
+ .restaurant-app .cart-item-image img{height:76px;min-height:76px}
+ .restaurant-app .cart-item-main{padding:0}
+ .restaurant-app .cart-item-top h2{font-size:23px;gap:4px}
+ .restaurant-app .cart-item-top>strong{font-size:22px}
+ .restaurant-app .cart-item-bottom{gap:10px}
+ .restaurant-app .order-summary{padding:18px}
+ .restaurant-app .summary-checkout{font-size:17px;padding:12px}
+ .restaurant-app .summary-checkout strong{font-size:16px}
+ .restaurant-app .checkout-intro h2{font-size:28px}
+ .restaurant-app .product-extras label{font-size:14px;flex-wrap:wrap;gap:8px}
+ .restaurant-app .product-extras b{font-size:13px}
+ .footer-main{grid-template-columns:1fr;gap:28px}
+ .footer-main .footer-logo{width:130px;margin:0 auto}
+ .footer-main nav{margin:0;display:grid;grid-template-columns:1fr 1fr;gap:6px 18px}
+ .footer-main nav a{font-size:25px}
+ .footer-main .newsletter{grid-column:auto;min-width:0;display:block}
+ .restaurant-app .newsletter h2{font-size:32px}
+}
+@media (max-width:360px){
+ .restaurant-card{grid-template-columns:minmax(0,1fr) 96px;padding:16px;gap:10px}
+ .restaurant-card h3{font-size:28px}
+ .restaurant-card-art{height:108px}
+ .restaurant-app .cart-item{grid-template-columns:1fr}
+ .restaurant-app .cart-item-image{display:none}
+ .restaurant-app .cart-item-top{flex-direction:row;flex-wrap:wrap}
+ .restaurant-app .cart-item-top h2{flex:1;min-width:130px}
+ .restaurant-app .cart-item-controls{margin-left:0}
+ .footer-main nav a{font-size:23px}
+}
+@media (max-width:800px) and (prefers-reduced-motion:reduce){
+ .reasons-stage{height:auto}
+ .restaurant-reason{width:100%}
+}
+@media (max-width:800px){
+ .restaurant-app .checkout-form .shop-order-modes{display:grid;grid-template-columns:1fr 1fr;gap:8px;width:100%}
+ .restaurant-app .checkout-form .shop-order-modes button{font-size:18px;padding:10px 8px;gap:6px;min-width:0;min-height:44px}
+ .restaurant-app .checkout-form .shop-order-modes svg{width:18px;height:18px;flex-shrink:0}
+ .restaurant-app .place-order{font-size:19px;gap:8px;flex-wrap:wrap}
+ .restaurant-app .place-order span{white-space:nowrap}
+ .restaurant-app .ref-button{transition:background .2s,color .2s,transform .2s}
+}
+/* Theme tokens also cover the original ordering components. */
+html[data-theme=light]{--red:#100b06;--red-text:#100b06;--green:#356b28}
+html[data-theme=light] .restaurant-app .shop-button:hover,
+html[data-theme=light] .restaurant-app .shop-button:focus-visible,
+html[data-theme=light] .restaurant-app .btn-primary:hover{background:#312315;color:#fff0d6;border-color:#312315}
