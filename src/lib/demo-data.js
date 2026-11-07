@@ -1,5 +1,6 @@
 /** Local demo operations. No fetch, API server, authentication, payments or database. */
 import { store } from './demo-storage';
+import {getSiteConfig} from './site-config';
 import { decorate, simulateAndTrack, STAGES, RIDERS, money, orderCode } from './demo-domain';
 
 const text = (value, limit) => String(value ?? '').trim().slice(0, limit);
@@ -29,6 +30,9 @@ export async function updateReview(id, payload) {
 }
 
 export async function placeOrder(payload) {
+  const config=getSiteConfig();
+  required(config.accepting, 'Ordering is paused in this demo. Please try again later.');
+  required(config[payload.type==='pickup'?'pickup':'delivery'], 'This fulfilment method is currently unavailable. Choose another method.');
   const customer = { name: text(payload.customer?.name, 60), phone: text(payload.customer?.phone, 30), address: text(payload.customer?.address, 240) };
   const type = payload.type === 'pickup' ? 'pickup' : 'delivery';
   required(customer.name && customer.phone, 'Name and phone number are required.');

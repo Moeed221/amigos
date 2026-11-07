@@ -10,6 +10,9 @@ const RIDERS = [
 const STAGES = ['placed', 'preparing', 'on_the_way', 'arriving', 'delivered'];
 const STAGE_LABELS = {
   placed: 'Order received',
+  accepted: 'Order accepted',
+  ready: 'Ready for handover',
+  collected: 'Collected',
   preparing: 'In the kitchen',
   on_the_way: 'Rider on the way',
   arriving: 'Rider arriving',
@@ -18,6 +21,9 @@ const STAGE_LABELS = {
 };
 const STAGE_COPY = {
   placed: 'Your order is confirmed and will be prepared shortly.',
+  accepted: 'The kitchen has accepted your order.',
+  ready: 'Your meal is packed and ready for handover.',
+  collected: 'Thanks for collecting. Enjoy your meal!',
   preparing: 'Your meal is being prepared in the Amigos kitchen.',
   on_the_way: 'Your rider has collected your order from Amigos.',
   arriving: 'Your rider is around the corner — please be ready.',
@@ -25,7 +31,7 @@ const STAGE_COPY = {
   cancelled: 'This order was cancelled.',
 };
 // simulated seconds per stage (divide by DEMO_SPEED for real seconds)
-const STAGE_SECONDS = { placed: 60, preparing: 240, on_the_way: 420, arriving: 120, delivered: 0, cancelled: 0 };
+const STAGE_SECONDS = { accepted: 60, ready: 60, collected: 0, placed: 60, preparing: 240, on_the_way: 420, arriving: 120, delivered: 0, cancelled: 0 };
 
 const money = (n) => Math.round(Number(n) * 100) / 100;
 
@@ -54,9 +60,11 @@ function orderCode() {
 async function simulateAndTrack(order) {
   if (!order) return null;
   const manual = !!order.manual;
+  const stages = manual ? (order.type === 'pickup' ? ['placed','accepted','preparing','ready','collected'] : ['placed','accepted','preparing','ready','on_the_way','arriving','delivered']) : STAGES;
+  const complete = ['delivered','collected'].includes(order.status);
   let changed = false;
 
-  if (!manual && order.status !== 'delivered' && order.status !== 'cancelled') {
+  if (!manual && !complete && order.status !== 'cancelled') {
     let guard = 0;
     while (guard < 8) {
       guard += 1;
@@ -76,17 +84,18 @@ async function simulateAndTrack(order) {
   }
   if (changed) await store.updateOrder(order.id, { status: order.status, statusChangedAt: order.statusChangedAt });
 
-  const stageIndex = STAGES.indexOf(order.status);
+  const stageIndex = stages.indexOf(order.status);
+  const isComplete = ['delivered','collected'].includes(order.status);
   const startedAt = new Date(order.statusChangedAt || order.createdAt).getTime();
-  const simulatedInStage = ((Date.now() - startedAt) / 1000) * DEMO_SPEED;
+  const simulatedInStage = manual ? 0 : ((Date.now() - startedAt) / 1000) * DEMO_SPEED;
   const stageDuration = STAGE_SECONDS[order.status] || 0;
   const withinStage = stageDuration ? Math.min(1, simulatedInStage / stageDuration) : 1;
 
   // remaining simulated seconds, then converted to display minutes
   let remaining = 0;
-  if (order.status !== 'delivered' && order.status !== 'cancelled') {
+  if (!isComplete && order.status !== 'cancelled') {
     remaining += Math.max(0, stageDuration - simulatedInStage);
-    for (let i = stageIndex + 1; i < STAGES.length; i += 1) remaining += STAGE_SECONDS[STAGES[i]] || 0;
+    for (let i = stageIndex + 1; i < stages.length; i += 1) remaining += STAGE_SECONDS[stages[i]] || 0;
   }
   // ETA is expressed in restaurant minutes (the same numbers a real kitchen quotes).
   // In demo mode the delivery simply plays out faster than the clock on screen.
@@ -94,14 +103,14 @@ async function simulateAndTrack(order) {
   const etaAt = new Date(Date.now() + etaMinutes * 60000).toISOString();
 
   // progress 0–100 across the whole journey
-  const progress = order.status === 'cancelled' ? 0 : Math.min(100, Math.round(((stageIndex + withinStage) / (STAGES.length - 1)) * 100));
+  const progress = order.status === 'cancelled' ? 0 : isComplete ? 100 : Math.min(100, Math.round(((stageIndex + withinStage) / (stages.length - 1)) * 100));
 
-  const timeline = STAGES.map((stage, i) => ({
+  const timeline = stages.map((stage, i) => ({
     key: stage,
     label: STAGE_LABELS[stage],
     detail: STAGE_COPY[stage],
-    done: i < stageIndex || order.status === 'delivered',
-    active: i === stageIndex && order.status !== 'delivered',
+    done: i < stageIndex || isComplete,
+    active: i === stageIndex && !isComplete,
   }));
 
   return {

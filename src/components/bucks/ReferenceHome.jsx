@@ -7,6 +7,7 @@ import {categoryColors,featuredIds,initialMenu,menuCategories} from '../../data/
 import {Roll,Flourish,RevealText} from './Motion';
 import Character from './Character';
 import Community from './Community';
+import useSiteConfig from '../control/useSiteConfig';
 const fallback=initialMenu();
 export function useRestaurantMenu(){const shop=useShop();return shop.ready?shop.data.items:fallback}
 export function FoodCard({product:p,compact=false}){
@@ -30,7 +31,8 @@ export function MealBuilder(){
  return <section className="bundle-panel restaurant-meal" id="build-meal"><div className="bundle-copy"><p className="eyebrow">Make it yours</p><h2 data-reveal>Build your<br/><span className="outline-type">perfect</span><br/>meal.</h2><div className="meal-choices">{groups.map((group,index)=><label key={group.name}><span><b>0{index+1}</b>{group.name}</span><select value={choices[index]} onChange={e=>{setAdded(false);setChoices(v=>v.map((id,i)=>i===index?Number(e.target.value):id))}}>{group.items.map(i=><option value={i.id} key={i.id}>{i.name} · {money(i.finalPrice)}</option>)}</select></label>)}</div></div><div className="meal-selection"><div className="meal-disc"/><div className="meal-foods">{selected.map((p,i)=><div className={'meal-food meal-food-'+i} key={i}>{p&&<img key={p.id} src={p.image} alt={p.name}/>}</div>)}</div><p className="meal-help">One main. One side. One drink.<br/>All three added separately, ready to customise.</p><button className="ref-button meal-add" disabled={!shop.ready||selected.some(i=>!i)} onClick={add}><Roll>{added?'Meal added':'Add my meal'}</Roll><span>{money(total)}</span></button>{added&&<Link href="/cart" className="meal-view">View your cart <Icon name="arrow" size={17}/></Link>}</div></section>
 }
 function Hero(){
- const items=useRestaurantMenu(),products=featuredIds.map(id=>items.find(p=>p.id===id)).filter(Boolean);
+ const config=useSiteConfig();
+ const items=useRestaurantMenu(),products=config.featuredIds.map(id=>items.find(p=>p.id===id)).filter(Boolean);
  const [current,setCurrent]=useState(0),p=products[current]||products[0],start=useRef(null);
  function change(delta){setCurrent(n=>(n+delta+products.length)%products.length)}
  if(!p)return null;

@@ -26,6 +26,23 @@ The retained `public/bucks/` directory includes visual reference fonts, ingredie
 
 ## Verification
 
-Production export: 144 static routes. Data checks cover all menu image paths, original prices, offers, removal of sauce products, delivery, pickup and tracking. Two signature burgers, fries and a regular cola total Rs 2,744 after existing offers. Browser checks cover the hero, pinned cards, responsive menu widths, meal builder, cart quantities and remove/undo.
+Production export: 158 static routes. Data checks cover all menu image paths, original prices, offers, removal of sauce products, delivery, pickup and tracking. Two signature burgers, fries and a regular cola total Rs 2,744 after existing offers. Browser checks cover the hero, pinned cards, responsive menu widths, meal builder, cart quantities and remove/undo.
 
 Managed preview serves the built export; rebuild after source changes. The original restaurant baseline remains on `backup/before-bucks-redesign-20261103`.
+
+## Amigos Control
+
+Open `/admin/` for the responsive superadmin demo. The workspace uses the storefront’s espresso, cream and gold theme, with a separate light/dark preference.
+
+- Overview, order queue, full-page order details and a kitchen board. Delivery and pickup have separate completion paths; cancellations require a reason. Payment recording does not process money.
+- Searchable menu with availability switches, full-page dish editing, duplication and drafts. Changes feed the browser-local storefront menu.
+- Automatic deals with category/dish scope and start/end times; display codes are labels, not checkout coupons.
+- Customer order history and support notes, completed-sales reports and CSV exports.
+- Homepage announcement and featured dishes, saved drafts, restaurant settings, ordering pause, delivery/pickup availability and preparation targets.
+- Team profile drafts, five role previews and a recent activity log. No invitation email is sent.
+
+This is a static demo, **not an authenticated administration system**. Role previews only simulate UI permissions. Sample orders are fictional and labelled; real checkout demos from the same browser are listed separately. Data lives in localStorage and does not sync between devices or visitors. A production release needs server-side authentication, authorization, durable storage and payment/order integrations.
+
+The shared restaurant collections use `amigos_static_demo_v1_*`. Workspace samples, team records and logs use `amigos_control_v1`; storefront settings use `amigos_control_site_v1`. Clearing these browser keys resets the corresponding demo data. Existing menu seeds are preserved in Git.
+
+Run `node scripts/check-control.mjs` for fulfilment transitions, role capabilities, reporting totals, date boundaries, form validation, CSV escaping and tracking checks, followed by `npm run build`.

@@ -59,7 +59,7 @@ async function deleteItem(id) {
 /* ----------------------------- offers ------------------------------- */
 async function getOffers({ activeOnly = false } = {}) {
   let offers = await readKey('offers');
-  if (activeOnly) offers = offers.filter((o) => o.active !== false && !isExpired(o));
+  if (activeOnly) offers = offers.filter((o) => o.active !== false && !isExpired(o) && (!o.startsAt || new Date(o.startsAt).getTime() <= Date.now()));
   return clone(offers).sort((a, b) => Number(b.id) - Number(a.id));
 }
 

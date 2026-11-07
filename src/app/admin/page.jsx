@@ -1,3 +1,3 @@
 import Admin from '../../components/Admin';
-export const metadata = { title: "Amigo's — Admin Panel", robots: { index: false, follow: false } };
-export default function AdminPage() { return <Admin />; }
+export const metadata={title:'Amigos Control — Superadmin',robots:{index:false,follow:false}};
+export default function Page(){return <Admin/>}
