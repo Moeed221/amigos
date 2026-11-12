@@ -238,3 +238,14 @@ html[data-theme=light] .ref-brand img,html[data-theme=light] .menu-logo,html[dat
 html[data-theme=light] .restaurant-meal{background:#ead8b8;color:#21170b}html[data-theme=light] .restaurant-meal .meal-help{color:#342b20}html[data-theme=light] .restaurant-meal .meal-choices label>span,html[data-theme=light] .restaurant-meal .meal-choices b{color:#342b20}
 .restaurant-meal .meal-choices b{opacity:1}
 @media(max-width:800px){.discount-announcement{margin-top:0;flex-wrap:nowrap;gap:6px;padding:8px 10px}.discount-announcement a{max-width:none;flex:1;min-width:0}.discount-announcement button{flex-shrink:0}.discount-announcement button:last-child{font-size:12px;padding:6px}}
+
+/* Keep option controls compact despite generic form input rules. */
+.restaurant-app .meat-options{min-width:0;width:100%;box-sizing:border-box}
+.restaurant-app .meat-options label{display:grid;grid-template-columns:22px minmax(0,1fr) auto;align-items:center;gap:12px;width:100%;box-sizing:border-box;padding:12px 8px}
+.restaurant-app .meat-options input[type=radio]{appearance:auto;width:20px!important;height:20px!important;min-width:20px!important;min-height:20px!important;max-width:20px;padding:0!important;margin:0!important;justify-self:start;accent-color:#dc3030}
+.restaurant-app .meat-options label>span{min-width:0;text-align:left}
+.restaurant-app .meat-options strong{margin:0;white-space:nowrap;text-align:right;font-size:16px}
+.restaurant-app .discount-announcement{display:grid;grid-template-columns:44px minmax(0,700px) 44px;gap:12px;align-items:center;justify-content:center}
+.restaurant-app .discount-announcement a{min-width:0;max-width:none;line-height:1.4;overflow-wrap:anywhere}
+.restaurant-app .discount-announcement button,.restaurant-app .discount-announcement button:last-child{width:44px;height:44px;padding:0;font-size:18px}
+@media(max-width:500px){.restaurant-app .discount-announcement{grid-template-columns:44px minmax(0,1fr) 44px;gap:8px;padding:8px 10px}.restaurant-app .meat-options label{gap:8px}.restaurant-app .meat-options strong{font-size:15px}}
