@@ -3,7 +3,7 @@ export default function AdminLogin() {
 <>
   <div className="login" id="login">
     <form className="login-card" id="loginForm">
-      <img src="/assets/logo.png" alt="Amigo's Mexican Grill" />
+      <img src="/assets/logo-white-text.webp" alt="Amigo's Mexican Grill" />
       <h1>Staff sign in</h1>
       <p>Manage orders, the menu, discounts and reviews.</p>
       <div className="field">

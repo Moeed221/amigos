@@ -4,7 +4,7 @@ export default function AdminShell() {
   <div className="shell" id="shell" style={{display: 'none'}}>
     <aside className="side">
       <div className="side-brand">
-        <img src="/assets/logo-sm.png" alt="" />
+        <img src="/assets/logo-white-text.webp" alt="" />
         <span>Amigo's<br />Admin</span>
       </div>
       <nav className="side-nav" id="sideNav">

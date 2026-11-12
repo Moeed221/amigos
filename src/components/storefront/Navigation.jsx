@@ -4,7 +4,7 @@ export default function Navigation() {
   {/* ============================ PRELOADER ============================ */}
   <div id="preloader" aria-hidden="true">
     <div className="pl-inner">
-      <img src="/assets/logo.png" alt="" />
+      <img src="/assets/logo-white-text.webp" alt="" />
       <div className="pl-bar"><span /></div>
       <div className="pl-word">Bienvenidos · Fresh off the grill</div>
     </div>
@@ -14,7 +14,7 @@ export default function Navigation() {
   <header className="nav" id="nav">
     <div className="nav-inner">
       <a href="#top" className="nav-brand" aria-label="Amigo's Mexican Grill — home">
-        <img src="/assets/logo-sm.png" alt="Amigo's Mexican Grill" />
+        <img src="/assets/logo-white-text.webp" alt="Amigo's Mexican Grill" />
       </a>
       <nav className="nav-links" aria-label="Primary">
         <a href="#menu" data-nav>Menu</a>
