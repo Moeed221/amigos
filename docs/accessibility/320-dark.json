@@ -1,0 +1,110 @@
+[
+  {
+    "route": "/",
+    "width": 320,
+    "overflow": false,
+    "passes": 27,
+    "incomplete": [
+      "aria-prohibited-attr",
+      "color-contrast"
+    ],
+    "violations": []
+  },
+  {
+    "route": "/shop/",
+    "width": 320,
+    "overflow": false,
+    "passes": 27,
+    "incomplete": [
+      "aria-prohibited-attr",
+      "color-contrast"
+    ],
+    "violations": []
+  },
+  {
+    "route": "/product/?id=1",
+    "width": 320,
+    "overflow": false,
+    "passes": 24,
+    "incomplete": [
+      "aria-prohibited-attr",
+      "color-contrast"
+    ],
+    "violations": []
+  },
+  {
+    "route": "/cart/",
+    "width": 320,
+    "overflow": false,
+    "passes": 24,
+    "incomplete": [
+      "aria-prohibited-attr",
+      "color-contrast"
+    ],
+    "violations": []
+  },
+  {
+    "route": "/checkout/",
+    "width": 320,
+    "overflow": false,
+    "passes": 24,
+    "incomplete": [
+      "aria-prohibited-attr",
+      "color-contrast"
+    ],
+    "violations": []
+  },
+  {
+    "route": "/track/",
+    "width": 320,
+    "overflow": false,
+    "passes": 25,
+    "incomplete": [
+      "aria-prohibited-attr",
+      "color-contrast"
+    ],
+    "violations": []
+  },
+  {
+    "route": "/admin/",
+    "width": 320,
+    "overflow": false,
+    "passes": 28,
+    "incomplete": [],
+    "violations": []
+  },
+  {
+    "route": "/admin/content/",
+    "width": 320,
+    "overflow": false,
+    "passes": 25,
+    "incomplete": [],
+    "violations": []
+  },
+  {
+    "route": "/admin/menu/",
+    "width": 320,
+    "overflow": false,
+    "passes": 26,
+    "incomplete": [],
+    "violations": []
+  },
+  {
+    "route": "/admin/orders/",
+    "width": 320,
+    "overflow": false,
+    "passes": 26,
+    "incomplete": [
+      "color-contrast"
+    ],
+    "violations": []
+  },
+  {
+    "route": "/admin/settings/",
+    "width": 320,
+    "overflow": false,
+    "passes": 23,
+    "incomplete": [],
+    "violations": []
+  }
+]

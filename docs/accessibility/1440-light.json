@@ -1,0 +1,108 @@
+[
+  {
+    "route": "/",
+    "width": 1440,
+    "theme": "light",
+    "overflow": false,
+    "passes": 27,
+    "incomplete": [
+      "color-contrast"
+    ],
+    "violations": []
+  },
+  {
+    "route": "/shop/",
+    "width": 1440,
+    "theme": "light",
+    "overflow": false,
+    "passes": 27,
+    "incomplete": [
+      "color-contrast"
+    ],
+    "violations": []
+  },
+  {
+    "route": "/product/?id=1",
+    "width": 1440,
+    "theme": "light",
+    "overflow": false,
+    "passes": 24,
+    "incomplete": [
+      "color-contrast"
+    ],
+    "violations": []
+  },
+  {
+    "route": "/cart/",
+    "width": 1440,
+    "theme": "light",
+    "overflow": false,
+    "passes": 24,
+    "incomplete": [
+      "color-contrast"
+    ],
+    "violations": []
+  },
+  {
+    "route": "/checkout/",
+    "width": 1440,
+    "theme": "light",
+    "overflow": false,
+    "passes": 24,
+    "incomplete": [
+      "color-contrast"
+    ],
+    "violations": []
+  },
+  {
+    "route": "/track/",
+    "width": 1440,
+    "theme": "light",
+    "overflow": false,
+    "passes": 25,
+    "incomplete": [
+      "color-contrast"
+    ],
+    "violations": []
+  },
+  {
+    "route": "/admin/",
+    "width": 1440,
+    "overflow": false,
+    "passes": 29,
+    "incomplete": [],
+    "violations": []
+  },
+  {
+    "route": "/admin/content/",
+    "width": 1440,
+    "overflow": false,
+    "passes": 26,
+    "incomplete": [],
+    "violations": []
+  },
+  {
+    "route": "/admin/menu/",
+    "width": 1440,
+    "overflow": false,
+    "passes": 27,
+    "incomplete": [],
+    "violations": []
+  },
+  {
+    "route": "/admin/orders/",
+    "width": 1440,
+    "overflow": false,
+    "passes": 27,
+    "incomplete": [],
+    "violations": []
+  },
+  {
+    "route": "/admin/settings/",
+    "width": 1440,
+    "overflow": false,
+    "passes": 25,
+    "incomplete": [],
+    "violations": []
+  }
+]

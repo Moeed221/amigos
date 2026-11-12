@@ -40,3 +40,28 @@ assert.deepEqual((await store.getOffers({activeOnly:true})).map(o=>o.id),[1]);
 await store.updateItem(1,{available:false});
 assert.equal((await store.getItems()).length,0);
 console.log('Store integration checks passed: scheduled/expired deals and sold-out dishes.');
+const config=await load('../src/lib/site-config.js');
+const dish={id:1,name:'Burger',price:100,offer:{percent:20},finalPrice:80};
+const cfg={...config.defaultConfig,meats:{1:{Chicken:1300,Beef:1450}}};
+assert.throws(()=>config.withMeat(dish,'',cfg),/Choose Chicken or Beef/);
+assert.equal(config.withMeat(dish,'Chicken',cfg).finalPrice,1040);
+assert.equal(config.withMeat(dish,'Beef',cfg).finalPrice,1160);
+assert.equal(config.withMeat(dish,'Beef',cfg).price,1450);
+assert.equal(config.withMeat({...dish,id:2},'',cfg).finalPrice,80);
+assert.throws(()=>config.validateSiteConfig({...cfg,socials:{facebook:'javascript:alert(1)'}}),/https/);
+assert.throws(()=>config.validateSiteConfig({...cfg,carousel:{seconds:0}}),/3–30/);
+assert.throws(()=>config.validateSiteConfig({...cfg,sections:{community:{items:{burger:{image:'javascript:alert(1)'}}}}}),/HTTPS/);
+assert.equal(config.readableInk('#000000'),'#ffffff');
+assert.equal(config.readableInk('#ffffff'),'#000000');
+console.log('Content checks passed: required meat variants, distinct prices, single discount, image/link validation and readable card ink.');
+// Exercise the real order adapter with an in-memory store; totals are recalculated at submission.
+const configUrl='data:text/javascript;base64,'+Buffer.from(await readFile(new URL('../src/lib/site-config.js',import.meta.url),'utf8')).toString('base64');
+const orderSource=(await readFile(new URL('../src/lib/demo-data.js',import.meta.url),'utf8'))
+.replace("import { store } from './demo-storage';",`const store={getItems:async()=>[{id:1,name:'Burger',price:1450}],getOffers:async()=>[{percent:20}],getCategories:async()=>[],getOrderByCode:async()=>null,createOrder:async o=>o};`)
+.replace("from './site-config'",`from '${configUrl}'`)
+.replace("import { decorate, simulateAndTrack, STAGES, RIDERS, money, orderCode } from './demo-domain';",`const decorate=(p)=>({...p,offer:{percent:20},finalPrice:p.price*.8}),simulateAndTrack=async o=>o,STAGES=[],RIDERS=[{}],money=n=>Math.round(n*100)/100,orderCode=()=> 'QA-1';`);
+const ordersApi=await import('data:text/javascript;base64,'+Buffer.from(orderSource).toString('base64'));
+await assert.rejects(()=>ordersApi.placeOrder({customer:{name:'QA',phone:'03000000000',address:'Test'},items:[{id:1,qty:1}],type:'delivery'}),/Choose Chicken or Beef/);
+const placed=await ordersApi.placeOrder({customer:{name:'QA',phone:'03000000000',address:'Test'},items:[{id:1,qty:2,meat:'Chicken'},{id:1,qty:1,meat:'Beef'}],type:'delivery'});
+assert.equal(placed.order.subtotal,4050);assert.equal(placed.order.discount,810);assert.equal(placed.order.total,3240);assert.equal(placed.order.items[0].meat,'Chicken');assert.match(placed.order.items[1].name,/Beef/);
+console.log('Order integration passed: variants survive submission, discounts apply once, delivery total unchanged.');

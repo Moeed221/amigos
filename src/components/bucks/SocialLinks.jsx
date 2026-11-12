@@ -1,0 +1,4 @@
+'use client';
+import useSiteConfig from '../control/useSiteConfig';
+const paths={facebook:<path d="M14 21v-8h3l.5-4H14V7c0-1 .3-2 2-2h2V1h-3c-4 0-6 2-6 6v2H6v4h3v8z"/>,instagram:<><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" strokeWidth="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" strokeWidth="2"/><circle cx="18" cy="6" r="1"/></>,youtube:<><rect x="1" y="4" width="22" height="16" rx="5"/><path d="m10 8 6 4-6 4z" fill="var(--ref-bg)"/></>};
+export default function SocialLinks(){const c=useSiteConfig();return <nav className="social-links" aria-label="Social media">{Object.entries(c.socials).filter(([,url])=>url).map(([name,url])=><a key={name} href={url} target="_blank" rel="noopener noreferrer" aria-label={name+' (opens in new tab)'}><svg aria-hidden="true" viewBox="0 0 24 24" width="22" height="22" fill="currentColor">{paths[name]}</svg><span>{name}</span></a>)}</nav>}

@@ -1,6 +1,6 @@
 /** Local demo operations. No fetch, API server, authentication, payments or database. */
 import { store } from './demo-storage';
-import {getSiteConfig} from './site-config';
+import {getSiteConfig,withMeat} from './site-config';
 import { decorate, simulateAndTrack, STAGES, RIDERS, money, orderCode } from './demo-domain';
 
 const text = (value, limit) => String(value ?? '').trim().slice(0, limit);
@@ -40,9 +40,9 @@ export async function placeOrder(payload) {
   required(Array.isArray(payload.items) && payload.items.length, 'Your cart is empty.');
   const menu = (await getMenu()).items;
   const items = payload.items.map(line => {
-    const item = exists(menu.find(item => Number(item.id) === Number(line.id)), 'An item is no longer available.');
+    const item = withMeat(exists(menu.find(item => Number(item.id) === Number(line.id)), 'An item is no longer available.'),line.meat,config);
     const qty = Math.min(20, Math.max(1, Math.floor(Number(line.qty) || 1)));
-    return { id: item.id, name: item.name, category: item.category, price: item.finalPrice, originalPrice: item.price, qty, image: item.image };
+    return { id: item.id, name: item.name, meat: item.meat||null, category: item.category, price: item.finalPrice, originalPrice: item.price, qty, image: item.image };
   });
   const subtotal = money(items.reduce((sum, item) => sum + item.originalPrice * item.qty, 0));
   const total = money(items.reduce((sum, item) => sum + item.price * item.qty, 0));
