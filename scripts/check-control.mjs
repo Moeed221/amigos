@@ -65,3 +65,23 @@ await assert.rejects(()=>ordersApi.placeOrder({customer:{name:'QA',phone:'030000
 const placed=await ordersApi.placeOrder({customer:{name:'QA',phone:'03000000000',address:'Test'},items:[{id:1,qty:2,meat:'Chicken'},{id:1,qty:1,meat:'Beef'}],type:'delivery'});
 assert.equal(placed.order.subtotal,4050);assert.equal(placed.order.discount,810);assert.equal(placed.order.total,3240);assert.equal(placed.order.items[0].meat,'Chicken');assert.match(placed.order.items[1].name,/Beef/);
 console.log('Order integration passed: variants survive submission, discounts apply once, delivery total unchanged.');
+// Delivery charges remain separate from discounted food, including free-delivery thresholds.
+const dc={...config.defaultConfig,deliverySettings:{...config.defaultDelivery,fee:200,minimum:500,freeAbove:2000}};
+assert.deepEqual(config.deliveryQuote(dc,'delivery',1000),{fee:200,minimum:500,total:1200});
+assert.equal(config.deliveryQuote(dc,'pickup',1000).total,1000);
+assert.equal(config.deliveryQuote(dc,'delivery',2000).fee,0);
+assert.match(config.checkoutIssue(dc,'delivery',499),/requires/);
+assert.equal(config.checkoutIssue(dc,'pickup',100),'');
+const hours=Array.from({length:7},()=>({closed:true,open:'12:00',close:'23:00'}));
+hours[5]={closed:false,open:'18:00',close:'02:00'};
+const scheduled={...dc,deliverySettings:{...dc.deliverySettings,scheduleEnabled:true,hours}};
+assert.equal(config.deliveryIsOpen(scheduled,new Date('2026-11-13T14:00:00Z')),true); // Friday 19:00 PKT
+assert.equal(config.deliveryIsOpen(scheduled,new Date('2026-11-13T20:00:00Z')),true); // Saturday 01:00 PKT
+assert.equal(config.deliveryIsOpen(scheduled,new Date('2026-11-13T21:00:00Z')),false); // Exact closing time
+assert.equal(config.deliveryIsOpen(scheduled,new Date('2026-11-14T14:00:00Z')),false);
+assert.throws(()=>config.validateSiteConfig({...dc,deliverySettings:{...dc.deliverySettings,fee:-1}}),/zero or greater/);
+assert.throws(()=>config.validateSiteConfig({...dc,deliverySettings:{...dc.deliverySettings,etaMin:90,etaMax:30}}),/maximum/);
+globalThis.localStorage={getItem:()=>JSON.stringify({...dc,deliverySettings:{...dc.deliverySettings,freeAbove:0}})};
+const paid=await ordersApi.placeOrder({customer:{name:'QA',phone:'03000000000',address:'Test'},items:[{id:1,qty:1,meat:'Beef'}],type:'delivery'});
+assert.equal(paid.order.subtotal,1450);assert.equal(paid.order.discount,290);assert.equal(paid.order.deliveryFee,200);assert.equal(paid.order.total,1360);
+console.log('Delivery checks passed: fees, discounts, minimums, free delivery, pickup and overnight schedules.');

@@ -1,6 +1,6 @@
 /** Local demo operations. No fetch, API server, authentication, payments or database. */
 import { store } from './demo-storage';
-import {getSiteConfig,withMeat} from './site-config';
+import {getSiteConfig,withMeat,safeImage,deliveryQuote,checkoutIssue} from './site-config';
 import { decorate, simulateAndTrack, STAGES, RIDERS, money, orderCode } from './demo-domain';
 
 const text = (value, limit) => String(value ?? '').trim().slice(0, limit);
@@ -45,11 +45,13 @@ export async function placeOrder(payload) {
     return { id: item.id, name: item.name, meat: item.meat||null, category: item.category, price: item.finalPrice, originalPrice: item.price, qty, image: item.image };
   });
   const subtotal = money(items.reduce((sum, item) => sum + item.originalPrice * item.qty, 0));
-  const total = money(items.reduce((sum, item) => sum + item.price * item.qty, 0));
+  const foodTotal = money(items.reduce((sum, item) => sum + item.price * item.qty, 0));
+  const issue=checkoutIssue(config,type,foodTotal);required(!issue,issue);
+  const {fee:deliveryFee,total}=deliveryQuote(config,type,foodTotal);
   let code;
   do { code = orderCode(); } while (await store.getOrderByCode(code));
-  const order = await store.createOrder({ code, customer, type, notes: text(payload.notes, 300), items, subtotal, total,
-    discount: money(subtotal - total), payment: payload.payment === 'card' ? 'card' : 'cod', status: 'placed',
+  const order = await store.createOrder({ code, customer, type, notes: text(payload.notes, 300), items, subtotal, total, deliveryFee, estimatedMinutes:type==='delivery'?config.deliverySettings.etaMax:config.prepMinutes,
+    discount: money(subtotal - foodTotal), payment: payload.payment === 'card' ? 'card' : 'cod', status: 'placed',
     statusChangedAt: new Date().toISOString(), rider: type === 'delivery' ? RIDERS[0] : null });
   return { ok: true, order: await simulateAndTrack(order) };
 }
@@ -74,7 +76,7 @@ async function itemPayload(payload, existing = {}) {
   item.price = Number(item.price);
   required(Number.isFinite(item.price) && item.price >= 0, 'Enter a valid non-negative price.');
   item.description = text(item.description, 400);
-  item.image = /^\/assets\/[a-z0-9_./-]+$/i.test(item.image) ? item.image : '/assets/cat-mexican.jpg';
+  required(safeImage(item.image),'Choose a valid local, HTTPS or uploaded image.');
   item.tags = Array.isArray(item.tags) ? item.tags.map(tag => text(tag, 30)) : [];
   item.available = item.available !== false;
   return item;

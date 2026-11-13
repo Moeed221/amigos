@@ -126,7 +126,7 @@ async function simulateAndTrack(order) {
     rider: order.rider,
     type: order.type,
     customer: { name: order.customer?.name, address: order.customer?.address },
-    totals: { subtotal: order.subtotal, discount: order.discount, total: order.total },
+    totals: { subtotal: order.subtotal, discount: order.discount, deliveryFee:order.deliveryFee||0, total: order.total },
     items: order.items,
     timeline,
     demo: { speed: DEMO_SPEED, manual: !!order.manual },

@@ -22,8 +22,9 @@ function readKey(key) {
 }
 
 function writeKey(key, value) {
+  if(typeof localStorage!=='undefined'){try { localStorage.setItem(prefix + key, JSON.stringify(value)); } catch { throw new Error('Browser storage is full or unavailable. Remove unused uploaded images or use hosted image URLs, then try again.'); }}
   memory[key] = clone(value);
-  try { localStorage.setItem(prefix + key, JSON.stringify(value)); } catch { /* Keep demo usable in memory. */ }
+  if(typeof window!=='undefined')window.dispatchEvent(new Event('amigos-menu'));
   return clone(value);
 }
 
